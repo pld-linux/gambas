@@ -1,0 +1,21 @@
+--- gambas-1.0.3/Makefile.orig	2005-02-05 08:48:09.018899760 +0100
++++ gambas-1.0.3/Makefile.in	2005-02-05 08:48:59.219268144 +0100
+@@ -699,18 +699,6 @@
+ 	 ROOT=$DESTDIR; \
+         fi
+ 
+-	@if test "$(DESTDIR)$(bindir)" != "$(ROOT)/usr/bin" && test "$(DESTDIR)$(bindir)" != "$(ROOT)/usr/bin/"; then \
+-	 echo "Making symbolic links in /usr/bin..."; \
+-	 rm -f $(ROOT)/usr/bin/gbx; \
+-	 ln -s $(DESTDIR)$(bindir)/gbx $(ROOT)/usr/bin/gbx; \
+-	 rm -f $(ROOT)/usr/bin/gbc; \
+-	 ln -s $(DESTDIR)$(bindir)/gbc $(ROOT)/usr/bin/gbc; \
+-	 rm -f $(ROOT)/usr/bin/gba; \
+-	 ln -s $(DESTDIR)$(bindir)/gba $(ROOT)/usr/bin/gba; \
+-	 rm -f $(ROOT)/usr/bin/gbi; \
+-	 ln -s $(DESTDIR)$(bindir)/gbi $(ROOT)/usr/bin/gbi; \
+-	fi
+-
+ 	@echo
+ 	@echo "Creating the library info files..."
+ 	@rm -rf $(DESTDIR)$(pkgdatadir)/info
