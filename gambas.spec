@@ -9,7 +9,7 @@ Source0:	http://gambas.sourceforge.net/%{name}-%{version}.tar.bz2
 # Source0-md5:	96ae0e75822d309f2d02bd98ebf86dbd
 Source1:	%{name}.desktop
 Patch0:		%{name}-Makefile.patch
-URL:		http://gambas.sourceforge.net
+URL:		http://gambas.sourceforge.net/
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	bzip2-devel
 BuildRequires:	curl-devel
@@ -110,8 +110,8 @@ This component allows you to compress/uncompress data or files with
 the bzip2 and zip algorithms.
 
 %description gb-compress -l pl
-Ten komponent pozwala Ci pakowaæ/rozpakowywaæ dane lub pliki
-algorytmami bzip2 i zip.
+Ten komponent pozwala pakowaæ/rozpakowywaæ dane lub pliki przy u¿yciu
+algorytmów bzip2 i zip.
 
 %package gb-db
 Summary:	The Gambas database component
@@ -124,47 +124,44 @@ This component allows you to access many databases management systems,
 provided that you install the needed driver packages.
 
 %description gb-db -l pl
-Ten komponent pozwala Ci na dostêp do wielu systemów bazodanowych,
-pod warunkiem, ¿e zaistalujesz wymagane pakiety sterowników.
+Ten komponent pozwala na dostêp do wielu systemów bazodanowych pod
+warunkiem doinstalowania wymaganych pakietów sterowników.
 
 %package gb-db-mysql
 Summary:	The MySQL driver for the Gambas database component
 Summary(pl):	Gambas - sterownik do MySQL dla komponentu bazodanowego
 Group:		Development/Languages
-Requires:	%{name} = %{version}-%{release} 
 Requires:	%{name}-gb-db = %{version}-%{release}
 
 %description gb-db-mysql
 This component allows you to access MySQL databases.
 
 %description gb-db-mysql -l pl
-Ten komponent pozwala Ci na dostêp do bazy danych MySQL.
+Ten komponent pozwala na dostêp do bazy danych MySQL.
 
 %package gb-db-postgresql
 Summary:	The PostgreSQL driver for the Gambas database component
 Summary(pl):	Gambas - sterownik do PostgreSQL dla komponentu bazodanowego
 Group:		Development/Languages
-Requires:	%{name} = %{version}-%{release} 
 Requires:	%{name}-gb-db = %{version}-%{release}
 
 %description gb-db-postgresql
 This component allows you to access PostgreSQL databases.
 
 %description gb-db-postgresql -l pl
-Ten komponent pozwala Ci na dostêp do bazy danych PostgreSQL.
+Ten komponent pozwala na dostêp do bazy danych PostgreSQL.
 
 %package gb-db-sqlite
 Summary:	The SQLite driver for the Gambas database component
 Summary(pl):	Gambas - sterownik do SQLite dla komponentu bazodanowego
 Group:		Development/Languages
-Requires:	%{name} = %{version}-%{release} 
 Requires:	%{name}-gb-db = %{version}-%{release}
 
 %description gb-db-sqlite
 This component allows you to access SQLite databases.
 
 %description gb-db-sqlite -l pl
-Ten komponent pozwala Ci na dostêp do bazy danych SQLite.
+Ten komponent pozwala na dostêp do bazy danych SQLite.
 
 %package gb-debug
 Summary:	The debugger helper component for the Gambas IDE
@@ -176,11 +173,12 @@ Requires:	%{name} = %{version}-%{release}
 This component helps the IDE to debug Gambas programs.
 
 %description gb-debug -l pl
-Komponent przeznaczony dla IDE Gambas, przydatny w odpluskwianiu
+Komponent przeznaczony dla IDE Gambasa, przydatny przy odpluskwianiu
 programów.
 
 %package gb-eval
 Summary:	The Gambas expression evaluator component
+Summary(pl):	Gambas - komponent do obliczania wyra¿eñ
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
@@ -188,8 +186,13 @@ Requires:	%{name} = %{version}-%{release}
 This component allows you to evaluate expressions at runtime. It is
 used by the Gambas Eval() function.
 
+%description gb-eval -l pl
+Ten komponent pozwala na obliczanie wyra¿eñ w programach. Jest u¿ywany
+przez funkcjê Gambasa Eval().
+
 %package gb-net
 Summary:	The Gambas networking component
+Summary(pl):	Komponent sieciowy Gambasa
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
@@ -197,66 +200,95 @@ Requires:	%{name} = %{version}-%{release}
 This component allows you to use TCP/IP and UDP sockets, and to access
 any serial ports.
 
+%description gb-net -l pl
+Ten komponent pozwala na u¿ywanie gniazd TCP/IP i UDP oraz na dostêp
+do portów szeregowych.
+
 %package gb-net-curl
 Summary:	The Gambas advanced networking component
+Summary(pl):	Zaawansowany komponent sieciowy Gambasa
 Group:		Development/Languages
-Requires:	%{name} = %{version}-%{release} 
 Requires:	%{name}-gb-net = %{version}-%{release}
 
 %description gb-net-curl
 This component allows your programs to easily become FTP or HTTP
 clients.
 
+%description gb-net-curl -l pl
+Ten komponent pozwala programom w ³atwy sposób staæ siê klientami FTP
+lub HTTP.
+
 %package gb-qt
 Summary:	The Gambas Qt GUI component
+Summary(pl):	Komponent graficznego interfejsu u¿ytkownika Qt dla Gambasa
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
 %description gb-qt
-This package includes the Gambas QT GUI component.
+This package includes the Gambas Qt GUI component.
+
+%description gb-qt -l pl
+Ten pakiet zawiera komponent graficznego interfejsu u¿ytkownika Qt dla
+Gambasa.
 
 %package gb-qt-ext
 Summary:	The Gambas extended Qt GUI component
+Summary(pl):	Komponent rozszerzonego graficznego interfejsu Qt dla Gambasa
 Group:		Development/Languages
-Requires:	%{name} = %{version}-%{release} 
 Requires:	%{name}-gb-qt = %{version}-%{release}
 
 %description gb-qt-ext
-This component includes somme uncommon QT controls.
+This component includes some uncommon Qt controls.
+
+%description gb-qt-ext -l pl
+Ten komponent zawiera niektóre ma³o popularne kontrolki Qt.
 
 %package gb-qt-editor
 Summary:	The Gambas source code editor component
+Summary(pl):	Komponent edytora kodu ¼ród³owego Gambasa
 Group:		Development/Languages
-Requires:	%{name} = %{version}-%{release} 
 Requires:	%{name}-gb-qt = %{version}-%{release}
 
 %description gb-qt-editor
 This component includes a Gambas source code editor with syntax
 highlighting. It is used by the IDE.
 
+%description gb-qt-editor -l pl
+Ten komponent zawiera edytor kodu ¼ród³owego Gambasa z pod¶wietlaniem
+sk³adni. Jest u¿ywany przez IDE.
+
 %package gb-qt-kde
 Summary:	The Gambas KDE component
+Summary(pl):	Komponent KDE dla Gambasa
 Group:		Development/Languages
-Requires:	%{name} = %{version}-%{release} 
 Requires:	%{name}-gb-qt = %{version}-%{release}
 
 %description gb-qt-kde
-This component transforms your QT application in a KDE application,
+This component transforms your Qt application in a KDE application,
 and allows you to pilot any other KDE application with the DCOP
 protocol.
 
+%description gb-qt-kde -l pl
+Ten komponent zamienia aplikacjê Qt w aplikacjê KDE i pozwala na
+sterowanie dowolnymi aplikacjami KDE poprzez protokó³ DCOP.
+
 %package gb-qt-kde-html
 Summary:	The Gambas KHTML component
+Summary(pl):	Komponent KHTML dla Gambasa
 Group:		Development/Languages
-Requires:	%{name} = %{version}-%{release} 
 Requires:	%{name}-gb-qt-kde = %{version}-%{release}
 
 %description gb-qt-kde-html
 This component allows you to use the KHTML Web Browser widget included
 in KDE.
 
+%description gb-qt-kde-html -l pl
+Ten komponent pozwala na u¿ywanie widgetu przegl±darki WWW KHTML
+zawartego w KDE.
+
 %package gb-sdl
 Summary:	The Gambas SDL component
+Summary(pl):	Komponent SDL dla Gambasa
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
@@ -264,24 +296,39 @@ Requires:	%{name} = %{version}-%{release}
 This component uses only the sound part of the SDL library. It allows
 you to simultaneously play many sounds and a music stored in a file.
 
+%description gb-sdl -l pl
+Ten komponent u¿ywa tylko czê¶ci d¼wiêkowej biblioteki SDL. Pozwala na
+jednoczesne odtwarzanie wielu d¼wiêków i muzyki zapisanej w pliku.
+
 %package gb-vb
-Summary:	The Gambas Visual Basic(tm) compatibility component
+Summary:	The Gambas Visual Basic(TM) compatibility component
+Summary(pl):	Komponent zgodno¶ci z Visual Basicem(TM) dla Gambasa
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
 %description gb-vb
 This component aims at including some functions that imitate the
-behaviour of Visual Basic(tm) functions. Use it only if you try to
+behaviour of Visual Basic(TM) functions. Use it only if you try to
 port some VB projects.
 
+%description gb-vb -l pl
+Ten komponent zawiera trochê funkcji, których celem jest imitowanie
+zachowania funkcji Visual Basica(TM). Nale¿y go u¿ywaæ wy³±cznie przy
+próbach sportowania projektów VB.
+
 %package gb-xml
-Summary:	The Gambas XML components based on the libxml and libxslt libraries.
+Summary:	The Gambas XML components based on the libxml and libxslt libraries
+Summary(pl):	Komponenty XML Gambasa oparte na bibliotekach libxml i libxslt
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
 %description gb-xml
 These components brings the power of the libxml and libxslt libraries
 to Gambas.
+
+%description gb-xml -l pl
+Te komponenty dostarczaj± do Gambasa potêgê bibliotek libxml i
+libxslt.
 
 %prep
 %setup -q
