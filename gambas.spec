@@ -1,13 +1,13 @@
+Summary:	Gambas - a free VB-like language
+Summary(pl):	Gambas - wolnodostêpny jêzyk VB-podobny
 Name:		gambas
-Summary:	Gambas is a free VB-like language.
-Summary(pl):	Gambas jest wolnym VB-podobnym jêzykiem.
 License:	GPL
-Group:		Development/Other
+Group:		Development/Languages
 Version:	0.90
 Release:	0.1	
-URL:		http://gambas.sf.net/
 Source0:	http://gambas.sourceforge.net/%{name}-%{version}.tar.bz2
 # Source0-md5:	1f3211e2c97a354205123a71441e6ced
+URL:		http://gambas.sf.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -22,47 +22,37 @@ gambas-lib for the required components and gambas-gui for the actual
 VB-like environment.
 
 %package doc
-Summary:	Documentation for Gambas language.
-Group:		Development/Other
-######		Unknown group!
+Summary:	Documentation for Gambas language
+Summary(pl):	Dokumentacja dla jêzyka Gambas
+Group:		Development/Languages
 
-%description -n gambas-doc
+%description doc
 Gambas is a free development environment based on a Basic interpreter
 with object extensions, like Visual Basic(tm). With Gambas, you can
 quickly design your program GUI, access MySQL or PostgreSQL databases,
 pilot KDE applications with DCOP, translate your program into many
 languages, and so on...
+
+This package contains Gambas language documentation.
 
 %package libs
-Summary:	Gambas language components and libraries.
-Group:		Development/Other
-######		Unknown group!
-Requires:	gambas
+Summary:	Gambas language components and libraries
+Summary(pl):	Komponenty i biblioteki jêzyka Gambas
+Group:		Development/Languages
+Requires:	%{name} = %{version}-%{release}
 
 %description libs
-Gambas is a free development environment based on a Basic interpreter
-with object extensions, like Visual Basic(tm). With Gambas, you can
-quickly design your program GUI, access MySQL or PostgreSQL databases,
-pilot KDE applications with DCOP, translate your program into many
-languages, and so on...
-
-This package only provides the Gambas components. You will need the
-gambas package for the compiler/interpreter and gambas-gui for the
-actual VB-like environment.
+This package provides the components for Gambas language. You will
+need the gambas package for the compiler/interpreter and gambas-gui
+for the actual VB-like environment.
 
 %package devel
-Summary:	Header file for Gambas component development.
-Group:		Development/Other
-######		Unknown group!
-Requires:	gambas
+Summary:	Header file for Gambas component development
+Summary(pl):	Pliki nag³ówkowe do tworzenia komponentów jêzyka Gambas
+Group:		Development/Languages
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
-Gambas is a free development environment based on a Basic interpreter
-with object extensions, like Visual Basic(tm). With Gambas, you can
-quickly design your program GUI, access MySQL or PostgreSQL databases,
-pilot KDE applications with DCOP, translate your program into many
-languages, and so on...
-
 This package includes the header file necessary for writing your own
 Gambas components, as well as the source for the Gambas GUI components
 necessary for building the gambas-gui package.
@@ -104,7 +94,7 @@ export PATH=${RPM_BUILD_ROOT}%{_bindir}:$PWD/src/comp:$PATH
 #tar cjvf ${RPM_BUILD_ROOT}%appdir/gambas-gui-%{version}.tar.bz2 app/ `find src/ -name *.component`
 #
 %clean
-rm -rf ${RPM_BUILD_ROOT}
+rm -rf $RPM_BUILD_ROOT
 
 %files libs
 %defattr(644,root,root,755)
