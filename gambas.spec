@@ -129,7 +129,7 @@ pod warunkiem, ¿e zaistalujesz wymagane pakiety sterowników.
 
 %package gb-db-mysql
 Summary:	The MySQL driver for the Gambas database component
-Summary(pl):	Gambas - sterownik do MySQL dla komponenu bazodanowego
+Summary(pl):	Gambas - sterownik do MySQL dla komponentu bazodanowego
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release} 
 Requires:	%{name}-gb-db = %{version}-%{release}
@@ -142,7 +142,7 @@ Ten komponent pozwala Ci na dostêp do bazy danych MySQL.
 
 %package gb-db-postgresql
 Summary:	The PostgreSQL driver for the Gambas database component
-Summary(pl):	Gambas - sterownik do PostgreSQL dla komponenu bazodanowego
+Summary(pl):	Gambas - sterownik do PostgreSQL dla komponentu bazodanowego
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release} 
 Requires:	%{name}-gb-db = %{version}-%{release}
@@ -155,7 +155,7 @@ Ten komponent pozwala Ci na dostêp do bazy danych PostgreSQL.
 
 %package gb-db-sqlite
 Summary:	The SQLite driver for the Gambas database component
-Summary(pl):	Gambas - sterownik do SQLite dla komponenu bazodanowego
+Summary(pl):	Gambas - sterownik do SQLite dla komponentu bazodanowego
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release} 
 Requires:	%{name}-gb-db = %{version}-%{release}
@@ -440,22 +440,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/%{name}/lib.gb.xml.libxml.*
 %{_datadir}/%{name}/info/gb.xml.libxml.*
-
-#%post libs -p /sbin/ldconfig
-
-#%postun libs -p /sbin/ldconfig
-
-#%post -n gambas-doc
-#ln -s /usr/share/doc/%{name}-doc-%{version}/examples %{appdir}/
-#mkdir -p %{appdir}/share
-#ln -s /usr/share/doc/%{name}-doc-%{version}/help %{appdir}/share/help
-
-#%postun -n gambas-doc
-#rm -f %{appdir}/examples
-#rm -f %{appdir}/share/help
-#rmdir %{appdir}/share
-
-#%post -n gambas
-#mkdir -p %appdir/bin/
-#mv -f /usr/bin/gbx %appdir/bin/gbx-real
-#ln -s %appdir/bin/gbx-real /usr/bin/gbx
