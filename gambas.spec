@@ -21,6 +21,18 @@ This package only provides the command-line utilities. You will need
 gambas-lib for the required components and gambas-gui for the actual
 VB-like environment.
 
+%description -l pl
+Gambas to wolnodostêpne ¶rodowisko programistyczne oparte na
+interpreterze Basica z rozszerzeniami obiektowymi, podobnym do Visual
+Basica(TM). Przy pomocy Gambasa mo¿na szybko projektowaæ graficzne
+interfejsy u¿ytkownika, odwo³ywaæ siê do baz danych MySQL i
+PostgreSQL, sterowaæ aplikacjami KDE poprzez DCOP, t³umaczyæ program
+na wiele jêzyków itd.
+
+Ten pakiet dostarcza tylko narzêdzia dzia³aj±ce z linii poleceñ. Do
+¶rodowiska programistycznego potrzebne s± jeszcze gambas-lib z
+komponentami oraz gambas-gui z samym ¶rodowiskiem podobnym do VB.
+
 %package doc
 Summary:	Documentation for Gambas language
 Summary(pl):	Dokumentacja dla jêzyka Gambas
@@ -35,6 +47,16 @@ languages, and so on...
 
 This package contains Gambas language documentation.
 
+%description doc -l pl
+Gambas to wolnodostêpne ¶rodowisko programistyczne oparte na
+interpreterze Basica z rozszerzeniami obiektowymi, podobnym do Visual
+Basica(TM). Przy pomocy Gambasa mo¿na szybko projektowaæ graficzne
+interfejsy u¿ytkownika, odwo³ywaæ siê do baz danych MySQL i
+PostgreSQL, sterowaæ aplikacjami KDE poprzez DCOP, t³umaczyæ program
+na wiele jêzyków itd.
+
+Ten pakiet zawiera dokumentacjê dla jêzyka Gambas.
+
 %package libs
 Summary:	Gambas language components and libraries
 Summary(pl):	Komponenty i biblioteki jêzyka Gambas
@@ -46,9 +68,15 @@ This package provides the components for Gambas language. You will
 need the gambas package for the compiler/interpreter and gambas-gui
 for the actual VB-like environment.
 
+%description libs -l pl
+Ten pakiet dostarcza komponenty dla jêzyka Gambas. Oprócz niego do
+pe³nego ¶rodowiska potrzebny jest pakiet gambas z
+kompilatorem/interpreterem oraz gambas-gui z w³a¶ciwym graficznym
+interfejsem.
+
 %package devel
 Summary:	Header file for Gambas component development
-Summary(pl):	Pliki nag³ówkowe do tworzenia komponentów jêzyka Gambas
+Summary(pl):	Plik nag³ówkowy do tworzenia komponentów jêzyka Gambas
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
@@ -56,6 +84,11 @@ Requires:	%{name} = %{version}-%{release}
 This package includes the header file necessary for writing your own
 Gambas components, as well as the source for the Gambas GUI components
 necessary for building the gambas-gui package.
+
+%description devel -l pl
+Ten pakiet zawiera plik nag³ówkowy potrzebny do pisania w³asnych
+komponentów Gambasa, a tak¿e ¼ród³a komponentów GUI Gambasa potrzebne
+do budowania pakietu gambas-gui.
 
 %prep
 %setup -q
