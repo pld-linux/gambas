@@ -1,12 +1,12 @@
 Summary:	Gambas - a free VB-like language
 Summary(pl):	Gambas - wolnodostêpny jêzyk podobny do VB
 Name:		gambas
-Version:	1.0.15
+Version:	1.0.16
 Release:	1
 License:	GPL v2
 Group:		Development/Languages
 Source0:	http://dl.sourceforge.net/gambas/%{name}-%{version}.tar.bz2
-# Source0-md5:	4dd696c64ce2f3ec3294c72ab00e6532
+# Source0-md5:	545e60fc7c52c10f7ec53149850c95ea
 Source1:	%{name}.desktop
 Patch0:		%{name}-Makefile.patch
 URL:		http://gambas.sourceforge.net/
