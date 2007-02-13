@@ -1,5 +1,5 @@
 Summary:	Gambas - a free VB-like language
-Summary(pl.UTF-8):   Gambas - wolnodostępny język podobny do VB
+Summary(pl.UTF-8):	Gambas - wolnodostępny język podobny do VB
 Name:		gambas
 Version:	1.0.17
 Release:	1
@@ -46,7 +46,7 @@ interpreter potrzebny do uruchamiania aplikacji Gambas.
 
 %package doc
 Summary:	Documentation for Gambas language
-Summary(pl.UTF-8):   Dokumentacja dla języka Gambas
+Summary(pl.UTF-8):	Dokumentacja dla języka Gambas
 Group:		Development/Languages
 
 %description doc
@@ -70,7 +70,7 @@ Ten pakiet zawiera dokumentację dla języka Gambas.
 
 %package ide
 Summary:	The Gambas IDE
-Summary(pl.UTF-8):   IDE dla Gambas
+Summary(pl.UTF-8):	IDE dla Gambas
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-gb-db = %{version}-%{release}
@@ -89,7 +89,7 @@ z menedżerem baz danych i wszystkimi niezbędnymi komponentami.
 
 %package examples
 Summary:	The examples for Gambas language
-Summary(pl.UTF-8):   Przykłady dla języka Gambas
+Summary(pl.UTF-8):	Przykłady dla języka Gambas
 Group:		Development/Languages
 Requires:	%{name}-ide = %{version}-%{release}
 
@@ -101,7 +101,7 @@ Ten pakiet zawiera kilka przykładów dla Gambas.
 
 %package gb-compress
 Summary:	The Gambas compression component
-Summary(pl.UTF-8):   Gambas - komponent do kompresji
+Summary(pl.UTF-8):	Gambas - komponent do kompresji
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
@@ -115,7 +115,7 @@ algorytmów bzip2 i zip.
 
 %package gb-db
 Summary:	The Gambas database component
-Summary(pl.UTF-8):   Gambas - komponent bazodanowy
+Summary(pl.UTF-8):	Gambas - komponent bazodanowy
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
@@ -129,7 +129,7 @@ warunkiem doinstalowania wymaganych pakietów sterowników.
 
 %package gb-db-mysql
 Summary:	The MySQL driver for the Gambas database component
-Summary(pl.UTF-8):   Gambas - sterownik do MySQL dla komponentu bazodanowego
+Summary(pl.UTF-8):	Gambas - sterownik do MySQL dla komponentu bazodanowego
 Group:		Development/Languages
 Requires:	%{name}-gb-db = %{version}-%{release}
 
@@ -141,7 +141,7 @@ Ten komponent pozwala na dostęp do bazy danych MySQL.
 
 %package gb-db-postgresql
 Summary:	The PostgreSQL driver for the Gambas database component
-Summary(pl.UTF-8):   Gambas - sterownik do PostgreSQL dla komponentu bazodanowego
+Summary(pl.UTF-8):	Gambas - sterownik do PostgreSQL dla komponentu bazodanowego
 Group:		Development/Languages
 Requires:	%{name}-gb-db = %{version}-%{release}
 
@@ -153,7 +153,7 @@ Ten komponent pozwala na dostęp do bazy danych PostgreSQL.
 
 %package gb-db-sqlite
 Summary:	The SQLite driver for the Gambas database component
-Summary(pl.UTF-8):   Gambas - sterownik do SQLite dla komponentu bazodanowego
+Summary(pl.UTF-8):	Gambas - sterownik do SQLite dla komponentu bazodanowego
 Group:		Development/Languages
 Requires:	%{name}-gb-db = %{version}-%{release}
 
@@ -165,7 +165,7 @@ Ten komponent pozwala na dostęp do bazy danych SQLite.
 
 %package gb-debug
 Summary:	The debugger helper component for the Gambas IDE
-Summary(pl.UTF-8):   Gambas - komponent debuggera dla IDE
+Summary(pl.UTF-8):	Gambas - komponent debuggera dla IDE
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
@@ -178,7 +178,7 @@ programów.
 
 %package gb-eval
 Summary:	The Gambas expression evaluator component
-Summary(pl.UTF-8):   Gambas - komponent do obliczania wyrażeń
+Summary(pl.UTF-8):	Gambas - komponent do obliczania wyrażeń
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
@@ -192,7 +192,7 @@ przez funkcję Gambasa Eval().
 
 %package gb-net
 Summary:	The Gambas networking component
-Summary(pl.UTF-8):   Komponent sieciowy Gambasa
+Summary(pl.UTF-8):	Komponent sieciowy Gambasa
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
@@ -206,7 +206,7 @@ do portów szeregowych.
 
 %package gb-net-curl
 Summary:	The Gambas advanced networking component
-Summary(pl.UTF-8):   Zaawansowany komponent sieciowy Gambasa
+Summary(pl.UTF-8):	Zaawansowany komponent sieciowy Gambasa
 Group:		Development/Languages
 Requires:	%{name}-gb-net = %{version}-%{release}
 
@@ -220,7 +220,7 @@ lub HTTP.
 
 %package gb-qt
 Summary:	The Gambas Qt GUI component
-Summary(pl.UTF-8):   Komponent graficznego interfejsu użytkownika Qt dla Gambasa
+Summary(pl.UTF-8):	Komponent graficznego interfejsu użytkownika Qt dla Gambasa
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
@@ -233,7 +233,7 @@ Gambasa.
 
 %package gb-qt-ext
 Summary:	The Gambas extended Qt GUI component
-Summary(pl.UTF-8):   Komponent rozszerzonego graficznego interfejsu Qt dla Gambasa
+Summary(pl.UTF-8):	Komponent rozszerzonego graficznego interfejsu Qt dla Gambasa
 Group:		Development/Languages
 Requires:	%{name}-gb-qt = %{version}-%{release}
 
@@ -245,7 +245,7 @@ Ten komponent zawiera niektóre mało popularne kontrolki Qt.
 
 %package gb-qt-editor
 Summary:	The Gambas source code editor component
-Summary(pl.UTF-8):   Komponent edytora kodu źródłowego Gambasa
+Summary(pl.UTF-8):	Komponent edytora kodu źródłowego Gambasa
 Group:		Development/Languages
 Requires:	%{name}-gb-qt = %{version}-%{release}
 
@@ -259,7 +259,7 @@ składni. Jest używany przez IDE.
 
 %package gb-qt-kde
 Summary:	The Gambas KDE component
-Summary(pl.UTF-8):   Komponent KDE dla Gambasa
+Summary(pl.UTF-8):	Komponent KDE dla Gambasa
 Group:		Development/Languages
 Requires:	%{name}-gb-qt = %{version}-%{release}
 
@@ -274,7 +274,7 @@ sterowanie dowolnymi aplikacjami KDE poprzez protokół DCOP.
 
 %package gb-qt-kde-html
 Summary:	The Gambas KHTML component
-Summary(pl.UTF-8):   Komponent KHTML dla Gambasa
+Summary(pl.UTF-8):	Komponent KHTML dla Gambasa
 Group:		Development/Languages
 Requires:	%{name}-gb-qt-kde = %{version}-%{release}
 
@@ -288,7 +288,7 @@ zawartego w KDE.
 
 %package gb-sdl
 Summary:	The Gambas SDL component
-Summary(pl.UTF-8):   Komponent SDL dla Gambasa
+Summary(pl.UTF-8):	Komponent SDL dla Gambasa
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
@@ -302,7 +302,7 @@ jednoczesne odtwarzanie wielu dźwięków i muzyki zapisanej w pliku.
 
 %package gb-vb
 Summary:	The Gambas Visual Basic(TM) compatibility component
-Summary(pl.UTF-8):   Komponent zgodności z Visual Basicem(TM) dla Gambasa
+Summary(pl.UTF-8):	Komponent zgodności z Visual Basicem(TM) dla Gambasa
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
@@ -318,7 +318,7 @@ próbach sportowania projektów VB.
 
 %package gb-xml
 Summary:	The Gambas XML components based on the libxml and libxslt libraries
-Summary(pl.UTF-8):   Komponenty XML Gambasa oparte na bibliotekach libxml i libxslt
+Summary(pl.UTF-8):	Komponenty XML Gambasa oparte na bibliotekach libxml i libxslt
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
