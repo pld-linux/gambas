@@ -2,10 +2,9 @@
 Name=Gambas
 Comment=Gambas Development Environment
 Comment[pl]=Środowisko programistyczne Gambas
-Icon=gambas.png
+Icon=gambas
 Exec=gambas
 Terminal=false
 Type=Application
 Categories=Qt;Development;IDE;
-Encoding=UTF-8
 # vi: encoding=utf-8
