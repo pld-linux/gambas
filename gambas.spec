@@ -13,7 +13,7 @@ URL:		http://gambas.sourceforge.net/
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	bzip2-devel
 BuildRequires:	curl-devel
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-devel
 BuildRequires:	libxslt-devel
